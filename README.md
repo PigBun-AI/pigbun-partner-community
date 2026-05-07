@@ -4,7 +4,7 @@
 
 # PigBun Partner
 
-[中文文档](./README.zh-CN.md)
+[Website](https://pigbunai.com) · [中文文档](./README.zh-CN.md)
 
 ## A local AI partner for work you want to entrust, not babysit.
 
@@ -16,6 +16,16 @@ The promise is not "one more chat box." The promise is:
 
 > You should not have to sit in front of the computer for every step.
 > You set the direction. PigBun helps keep the work moving.
+
+## Product Philosophy
+
+Today's AI assistants often feel like still water. They only ripple when you touch them. If you are not sitting in front of the computer, nothing really moves.
+
+PigBun wants that still water to become a river.
+
+You set the direction. Your AI partner understands the goal, turns it into workstreams, and keeps the current moving. As the work gathers context, tools, decisions, feedback, and history, the river should become wider and deeper instead of drying up after one conversation.
+
+That is the product philosophy behind PigBun: not a smarter box waiting for prompts, but a long-running partner system that can carry entrusted work over time.
 
 This repository is PigBun's public home for early users:
 
