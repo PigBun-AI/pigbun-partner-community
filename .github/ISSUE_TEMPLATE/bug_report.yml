@@ -1,0 +1,55 @@
+name: Bug report
+description: Report something broken in PigBun Partner
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: What were you trying to do?
+      description: Describe the real task or workflow.
+      placeholder: I was trying to...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: What did you see instead?
+      placeholder: PigBun...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Install / start
+        - Update
+        - Main chat
+        - Workstream
+        - Meeting room
+        - Settings
+        - Claude Code executor
+        - Codex executor
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: PigBun version
+      placeholder: 0.1.1-alpha.6
+  - type: input
+    id: environment
+    attributes:
+      label: OS and browser
+      placeholder: macOS 14.6, Chrome / Safari
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste relevant terminal logs. Remove secrets first.
+      render: text
+
