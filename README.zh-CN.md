@@ -132,7 +132,9 @@ PigBun 仍处于 alpha 阶段。
 
 <img src="./assets/wechat-qr.jpg" alt="PigBun AI 微信二维码" width="220" />
 
-Telegram 暂时不公开私人账号。早期用户支持更适合放在公开群组或频道里，而不是集中到个人私聊。
+Telegram 可以扫描 PigBun AI 官方交流群二维码：
+
+<img src="./assets/telegram-group.jpeg" alt="PigBun AI Telegram 官方交流群二维码" width="220" />
 
 ## 目前还没有完整开源
 

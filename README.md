@@ -130,7 +130,9 @@ For WeChat, scan the PigBun AI QR code:
 
 <img src="./assets/wechat-qr.jpg" alt="PigBun AI WeChat QR code" width="220" />
 
-Telegram support is not published yet. A public group or channel is a better support path than a private personal account.
+For Telegram, scan the PigBun AI community group QR code:
+
+<img src="./assets/telegram-group.jpeg" alt="PigBun AI Telegram community group QR code" width="220" />
 
 ## Not Open Source Yet
 
