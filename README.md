@@ -2,27 +2,58 @@
   <img src="./assets/pigbun-logo.svg" alt="PigBun Partner" width="112" />
 </p>
 
-# PigBun Partner Community
+# PigBun Partner
 
 [中文文档](./README.zh-CN.md)
 
-PigBun Partner is a local AI partner system.
+## A local AI partner for work you want to entrust, not babysit.
 
-It is not another chat wrapper. The goal is simple: you entrust an ongoing goal to PigBun, and PigBun helps you keep moving it forward through partner chat, workstreams, local tools, and a browser workbench.
+Most AI tools wait for your next instruction.
 
-This public repository is the community home for PigBun Partner:
+PigBun is built for a different relationship: you explain what you want to move forward, your AI partner turns it into an ongoing workstream, and the system keeps carrying it until it needs your judgment, permission, or real-world access.
 
-- Report bugs
-- Ask questions
-- Read installation notes
-- Follow the roadmap
-- Track known issues and releases
+The promise is not "one more chat box." The promise is:
 
-The core runtime is not open-sourced yet. This repository exists so early users have a visible place to gather, give feedback, and understand what is changing.
+> You should not have to sit in front of the computer for every step.
+> You set the direction. PigBun helps keep the work moving.
+
+This repository is PigBun's public home for early users:
+
+- Installation notes
+- Bug reports
+- Product feedback
+- Roadmap and release notes
+- Community discussion
+
+PigBun's core runtime is not open source yet. This repository is the public front door, not the full source code repository.
+
+## How PigBun Works
+
+The main interaction is simple:
+
+1. You talk to your AI partner.
+2. When a goal is clear enough, the partner takes it in.
+3. PigBun creates a workstream for that goal.
+4. The workstream keeps context, uses local tools, and continues separately from the chat.
+5. When a decision, account, file, password, or approval is needed, PigBun calls you back.
+
+That is the core difference: PigBun is designed around entrustment, not around one prompt and one answer.
+
+## What You Can Use It For Today
+
+PigBun is still in alpha, but it is already useful for real work:
+
+- Turn a product idea into an ongoing workstream.
+- Let a partner split work into research, product, development, deployment, and follow-up.
+- Keep project context across conversations instead of restarting every time.
+- Use local execution tools such as Claude Code and Codex.
+- Review progress, blockers, tool activity, and decisions in the browser workbench.
+
+PigBun is especially relevant if you are an independent builder, founder, operator, or product-minded developer who wants help carrying a project over time.
 
 ## Install
 
-PigBun currently runs as a local Node runtime with a browser workbench.
+PigBun currently runs locally and opens a browser workbench.
 
 ```bash
 curl -fsSL https://pigbunai.com/install.sh | bash
@@ -34,30 +65,15 @@ After installation, start PigBun with:
 pigbun
 ```
 
-The installer will:
+The installer will check the local environment, download the latest alpha runtime, install the `pigbun` command, and open PigBun locally.
 
-- Check the local runtime requirements.
-- Download the latest alpha runtime.
-- Install the `pigbun` command.
-- Start PigBun locally and open the browser workbench.
+## The Model Behind PigBun Matters
 
-## What PigBun Is For
+PigBun is not only a model. It adds a coordination layer around the model: workstreams, memory, tool context, activity history, recovery paths, and a browser workbench. In technical discussions, this is often called a harness.
 
-PigBun is designed for people who want to hand off ongoing work, not just ask one-off questions.
+This layer helps PigBun keep work visible, organized, and recoverable. But it does not magically turn every model into a reliable partner. The model still has to understand goals, decide when to split work, use tools correctly, and recover from mistakes.
 
-Current alpha focus:
-
-- Chat with an AI partner that remembers the context of your work.
-- Create workstreams for ongoing goals.
-- Let workstreams continue separately from the main chat.
-- Use local execution tools such as Claude Code and Codex.
-- Review progress, decisions, and blockers in the browser workbench.
-
-## Base Model Matters
-
-PigBun uses an external harness architecture: it coordinates partner chat, workstreams, memory, tools, activity logs, and recovery paths around local executors.
-
-That harness improves reliability, but it does not remove the importance of the base model. A weaker or unstable model can still misunderstand goals, skip important steps, fail to split work correctly, misuse tools, or produce lower-quality plans. For serious work, the base model has a direct impact on PigBun's stability and delivery quality.
+For serious early use, we strongly recommend running PigBun with a strong base model.
 
 Recommended base models for early use:
 
@@ -65,22 +81,25 @@ Recommended base models for early use:
 - GPT-5.4 / GPT-5.5
 - Kimi 2.6
 
-Kimi CLI support is planned for a future PigBun executor path.
+Kimi CLI support is planned for a future PigBun connection path.
 
 ## Current Status
 
 PigBun is in alpha.
 
-It is usable, but you should expect rough edges:
+It can be used today, but it is not a polished public release yet.
 
-- Installation and auto-update are still being hardened.
-- UI wording and internationalization are still being refined.
-- Claude Code and Codex behavior may differ across user machines.
-- Some workstream flows may still need manual guidance.
+Current focus:
+
+- Make installation and updates boring and reliable.
+- Make workstream behavior stable across real user machines.
+- Remove technical language from normal product screens.
+- Improve Chinese, English, and Russian wording.
+- Keep Claude Code and Codex behavior predictable.
 
 If you hit a problem, please open an issue with logs and steps to reproduce.
 
-## Helpful Links
+## Useful Links
 
 - [Roadmap](./ROADMAP.md)
 - [Known issues](./KNOWN_ISSUES.md)
@@ -89,9 +108,9 @@ If you hit a problem, please open an issue with logs and steps to reproduce.
 - [FAQ](./FAQ.md)
 - [Security and privacy notes](./SECURITY.md)
 
-## Where To Give Feedback
+## Feedback
 
-Use GitHub Issues for concrete bugs:
+Use GitHub Issues when something is broken:
 
 - Installation failed.
 - PigBun cannot start.
@@ -99,25 +118,22 @@ Use GitHub Issues for concrete bugs:
 - Update checks do not find the latest version.
 - UI text is confusing or untranslated.
 
-Use GitHub Discussions for:
+Use GitHub Discussions for product ideas, usage questions, workflow examples, and longer feedback.
 
-- Product ideas.
-- Questions about how to use PigBun.
-- Workflow examples.
-- Longer feedback that is not a direct bug.
+When sharing logs, remove secrets, tokens, passwords, customer data, and private repository URLs.
 
 ## Contact
 
-For public product discussion, please use GitHub Issues and Discussions first.
+For public product discussion, use GitHub Issues and Discussions first.
 
-For WeChat contact, scan the PigBun AI QR code:
+For WeChat, scan the PigBun AI QR code:
 
 <img src="./assets/wechat-qr.jpg" alt="PigBun AI WeChat QR code" width="220" />
 
-Telegram support is not published yet. We recommend using a public group or channel instead of a private personal account for early user support.
+Telegram support is not published yet. A public group or channel is a better support path than a private personal account.
 
 ## Not Open Source Yet
 
-PigBun's runtime code is currently private while the product is stabilizing.
+PigBun's core runtime is currently private while the product is stabilizing.
 
-The short-term priority is to make the product reliable for early users before turning it into a full open-source maintenance surface. Public documentation, issue tracking, roadmap, and release notes will stay here.
+The short-term priority is reliability for early users. Public documentation, issue tracking, roadmap, and release notes will stay here.
