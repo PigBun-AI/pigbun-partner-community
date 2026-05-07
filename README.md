@@ -1,4 +1,10 @@
+<p align="center">
+  <img src="./assets/pigbun-logo.svg" alt="PigBun Partner" width="112" />
+</p>
+
 # PigBun Partner Community
+
+[中文文档](./README.zh-CN.md)
 
 PigBun Partner is a local AI partner system.
 
@@ -47,6 +53,20 @@ Current alpha focus:
 - Use local execution tools such as Claude Code and Codex.
 - Review progress, decisions, and blockers in the browser workbench.
 
+## Base Model Matters
+
+PigBun uses an external harness architecture: it coordinates partner chat, workstreams, memory, tools, activity logs, and recovery paths around local executors.
+
+That harness improves reliability, but it does not remove the importance of the base model. A weaker or unstable model can still misunderstand goals, skip important steps, fail to split work correctly, misuse tools, or produce lower-quality plans. For serious work, the base model has a direct impact on PigBun's stability and delivery quality.
+
+Recommended base models for early use:
+
+- Claude Sonnet / Claude Opus
+- GPT-5.4 / GPT-5.5
+- Kimi 2.6
+
+Kimi CLI support is planned for a future PigBun executor path.
+
 ## Current Status
 
 PigBun is in alpha.
@@ -86,9 +106,18 @@ Use GitHub Discussions for:
 - Workflow examples.
 - Longer feedback that is not a direct bug.
 
+## Contact
+
+For public product discussion, please use GitHub Issues and Discussions first.
+
+For WeChat contact, scan the PigBun AI QR code:
+
+<img src="./assets/wechat-qr.jpg" alt="PigBun AI WeChat QR code" width="220" />
+
+Telegram support is not published yet. We recommend using a public group or channel instead of a private personal account for early user support.
+
 ## Not Open Source Yet
 
 PigBun's runtime code is currently private while the product is stabilizing.
 
 The short-term priority is to make the product reliable for early users before turning it into a full open-source maintenance surface. Public documentation, issue tracking, roadmap, and release notes will stay here.
-
